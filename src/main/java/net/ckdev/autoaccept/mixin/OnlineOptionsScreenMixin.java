@@ -20,7 +20,7 @@ public class OnlineOptionsScreenMixin {
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/client/gui/components/OptionsList;addSmall([Lnet/minecraft/client/OptionInstance;)V",
-                    ordinal = 0
+                    ordinal = 2
             )
     )
     private void redirectPresenceRow(OptionsList list, OptionInstance<?>[] options) {
