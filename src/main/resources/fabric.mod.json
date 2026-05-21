@@ -10,7 +10,7 @@
 	"icon": "assets/autoaccept/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"net.ckdev.autoaccept.AutoAccept"
 		]
 	},

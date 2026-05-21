@@ -1,6 +1,6 @@
 package net.ckdev.autoaccept;
 
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 
-public class AutoAccept implements ModInitializer {
+public class AutoAccept implements ClientModInitializer {
 	public static final String MOD_ID = "autoaccept";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -21,7 +21,7 @@ public class AutoAccept implements ModInitializer {
 			.getConfigDir().resolve("autoaccept.properties");
 
 	@Override
-	public void onInitialize() {
+	public void onInitializeClient() {
 		loadConfig();
 	}
 
