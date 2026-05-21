@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.ckdev.autoaccept.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"FriendJoinHandlerMixin",
+		"FriendJoinHandlerAccessor",
+		"OnlineOptionsScreenMixin",
+		"OnlineOptionsScreenAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

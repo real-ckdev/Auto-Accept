@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "autoaccept",
+	"version": "${version}",
+	"name": "Auto Accept",
+	"description": "Automatically accepts join requests.",
+	"authors": [
+		"ckdev"
+	],
+	"icon": "assets/autoaccept/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ckdev.autoaccept.AutoAccept"
+		]
+	},
+	"mixins": [
+		"autoaccept.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "26.2-alpha.8",
+		"java": ">=25"
+	}
+}
